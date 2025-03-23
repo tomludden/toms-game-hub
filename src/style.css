@@ -155,50 +155,6 @@ button:hover {
   z-index: 10;
 }
 
-/* @media (max-width: 909px) {
-  .help-text {
-    position: absolute;
-    bottom: 18%;
-    font-size: 30px;
-  }
-  .flip-card {
-    height: 80%;
-  }
-  .game-description {
-    font-size: 19px;
-  }
-} */
-
-/* @media (max-width: 800px) {
-  .help-text {
-    visibility: hidden;
-  }
-  .flip-card-back,
-  .flip-card-front {
-    height: 100%;
-    background-size: contain;
-  }
-
-  .flip-card {
-    position: absolute;
-    top: 9%;
-    flex-direction: column;
-    justify-content: space-evenly;
-    height: 82%;
-  }
-  .flip-card-inner {
-    width: 65%;
-    height: 30%;
-    top: 0;
-  }
-  .game-description {
-    position: absolute;
-    font-size: 16px;
-    top: 1%;
-  }
-} */
-
-/* Media Queries for smaller screens */
 @media (max-width: 749px) {
   .card-grid {
     /*  width: 90%;  */ /* Expand grid on smaller screens */
