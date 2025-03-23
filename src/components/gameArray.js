@@ -6,7 +6,7 @@ export const gameArray = [
     alt: 'Project 1'
   },
   {
-    link: 'https://soft-profiterole-23a3f3.netlify.app/',
+    link: 'https://stunning-crisp-2de041.netlify.app/',
     imageSrc: './src/assets/images/game2.png',
     description:
       'Yummy Fruits - can you collect as many fruits as possible while avoiding the tempting sweets?',
