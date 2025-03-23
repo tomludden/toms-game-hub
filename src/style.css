@@ -155,7 +155,7 @@ button:hover {
   z-index: 10;
 }
 
-@media (max-width: 749px) {
+@media (max-width: 821px) {
   .card-grid {
     /*  width: 90%;  */ /* Expand grid on smaller screens */
     flex-direction: column; /* Stack cards vertically */
