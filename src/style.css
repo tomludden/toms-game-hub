@@ -173,7 +173,7 @@ button:hover {
   .flip-card-back {
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 120px;
+    background-size: 125px;
   }
 }
 @media (max-width: 659px) {
