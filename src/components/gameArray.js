@@ -1,12 +1,12 @@
 export const gameArray = [
   {
-    link: 'https://iridescent-fudge-6837ba.netlify.app/',
+    link: 'https://melodic-khapse-9c54c0.netlify.app/',
     imageSrc: './src/assets/images/game1.png',
     description: '3 in a row - the classic game to play with friends',
     alt: 'Project 1'
   },
   {
-    link: 'https://gorgeous-malabi-518ff1.netlify.app/',
+    link: 'https://poetic-crumble-b1072d.netlify.app/',
     imageSrc: './src/assets/images/game2.png',
     description:
       'Yummy Fruits - can you collect as many fruits as possible while avoiding the tempting sweets?',
