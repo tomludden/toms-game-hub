@@ -135,8 +135,17 @@ button:hover {
 
 @media (max-width: 821px) {
   .card-grid {
-    /*  width: 90%;  */ /* Expand grid on smaller screens */
-    flex-direction: column; /* Stack cards vertically */
+    position: absolute;
+    top: 30%;
+    left: 19%;
+    width: 62%;
+    height: 50svh; /* Height of the grid */
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 244);
+    border-radius: 30px;
   }
 
   .flip-card {
