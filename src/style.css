@@ -148,6 +148,20 @@ button:hover {
     background-color: rgb(238, 238, 244);
     border-radius: 30px;
   }
+  .flip-card {
+    display: flex;
+    border-radius: 30px;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 48svh;
+    perspective: 1000px;
+    background-color: rgb(238, 238, 244);
+    margin: 10px; /* Add space between the cards */
+  }
+  .flip-card-back {
+    background-size: 50%;
+  }
 }
 
 @media (max-width: 821px) {
