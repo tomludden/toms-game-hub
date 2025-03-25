@@ -6,7 +6,7 @@ export const gameArray = [
     alt: 'Project 1'
   },
   {
-    link: 'https://poetic-crumble-b1072d.netlify.app/',
+    link: 'https://celebrated-tulumba-609f99.netlify.app/',
     imageSrc: './src/assets/images/game2.png',
     description:
       'Yummy Fruits - can you collect as many fruits as possible while avoiding the tempting sweets?',
@@ -14,7 +14,7 @@ export const gameArray = [
   },
 
   {
-    link: 'https://velvety-pudding-ca9ca4.netlify.app/',
+    link: 'https://cozy-biscochitos-f27794.netlify.app/',
     imageSrc: './src/assets/images/game3.png',
     description:
       'Match It - match as many pairs as you can...are you up to the challenge?',
