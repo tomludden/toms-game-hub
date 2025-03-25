@@ -177,6 +177,7 @@ button:hover {
     width: 62%;
     height: 50svh; /* Height of the grid */
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
