@@ -141,6 +141,7 @@ button:hover {
     width: 62%;
     height: 50svh; /* Height of the grid */
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
     align-content: center;
     align-items: center;
@@ -168,5 +169,18 @@ button:hover {
     position: absolute;
     top: -5%;
     font-size: 14px;
+  }
+  .card-grid {
+    position: absolute;
+    top: 31%;
+    left: 19%;
+    width: 62%;
+    height: 50svh; /* Height of the grid */
+    display: flex;
+    justify-content: space-evenly;
+    align-content: center;
+    align-items: center;
+    background-color: rgb(238, 238, 244);
+    border-radius: 30px;
   }
 }
