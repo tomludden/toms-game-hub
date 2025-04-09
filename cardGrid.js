@@ -36,7 +36,7 @@ export function createFlipCard(image, link, description) {
 
   const flipCardBack = document.createElement('div')
   flipCardBack.className = 'flip-card-back'
-  flipCardBack.style.backgroundImage = `url(${image})` // Background image for the card back
+  flipCardBack.style.backgroundImage = `url(${image})`
 
   const flipCardFront = document.createElement('div')
   flipCardFront.className = 'flip-card-front'
@@ -49,13 +49,14 @@ export function createFlipCard(image, link, description) {
   buttonFront.textContent = 'Play Now'
   buttonFront.className = 'buttonFront'
 
-  buttonFront.addEventListener('click', function (event) {
-    event.stopPropagation() // Prevent the flip event from triggering
-    window.location.href = link // Redirect to the game link
+  // Redirect to the game page when "Play Now" is clicked
+  buttonFront.addEventListener('click', (event) => {
+    event.stopPropagation() // Prevent the flip effect
+    window.location.href = `./src/components/games/${link}/index.html` // Navigate to the game page
   })
 
-  flipCardInner.addEventListener('click', function () {
-    flipCardInner.classList.toggle('flip-card-click') // Toggle flip effect
+  flipCardInner.addEventListener('click', () => {
+    flipCardInner.classList.toggle('flip-card-click') // Toggle the flip effect
   })
 
   flipCardFront.appendChild(gameDescription)
@@ -67,4 +68,31 @@ export function createFlipCard(image, link, description) {
   flipCard.appendChild(flipCardInner)
 
   return flipCard
+}
+export function loadGamePage(link) {
+  const appDiv = document.getElementById('app')
+
+  // Clear the current content of the app div
+  appDiv.innerHTML = ''
+
+  // Construct the full path to the game's index.html, including the game name
+  const gamePath = `./src/components/games/${encodeURI(link)}/index.html`
+
+  console.log(`Loading game from path: ${gamePath}`)
+
+  fetch(gamePath)
+    .then((response) => {
+      if (!response.ok) {
+        throw new Error(`Failed to load ${gamePath}: ${response.statusText}`)
+      }
+      return response.text()
+    })
+    .then((htmlContent) => {
+      // Redirect directly to the game's index.html
+      window.location.href = gamePath
+    })
+    .catch((error) => {
+      console.error(error)
+      appDiv.innerHTML = `<p class="error">Failed to load the game. Please try again later.</p>`
+    })
 }

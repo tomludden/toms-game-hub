@@ -26,7 +26,7 @@ body {
   top: 31%;
   left: 19%;
   width: 62%;
-  height: 50svh; /* Height of the grid */
+  height: 50svh;
   display: flex;
   justify-content: space-evenly;
   align-content: center;
@@ -57,11 +57,11 @@ button:hover {
   border-radius: 30px;
   justify-content: center;
   align-items: center;
-  width: 30%; /* Each card takes up approximately 30% of the grid width */
+  width: 30%;
   height: 48svh;
   perspective: 1000px;
   background-color: rgb(238, 238, 244);
-  margin: 10px; /* Add space between the cards */
+  margin: 10px;
 }
 
 .flip-card-inner {
@@ -70,8 +70,8 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%; /* Full width of the flip card */
-  height: 100%; /* Full height of the flip card */
+  width: 100%;
+  height: 100%;
   transform: rotateY(-180deg);
   background-color: rgb(238, 238, 244);
   transition: transform 0.6s cubic-bezier(0.1, 0.22, 0.8, 1.13);
@@ -133,44 +133,13 @@ button:hover {
   bottom: 10%;
 }
 
-@media (max-width: 1025px) {
-  .card-grid {
-    position: absolute;
-    top: 29%;
-    left: 19%;
-    width: 62%;
-    height: 50svh; /* Height of the grid */
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center;
-    align-items: center;
-    background-color: rgb(238, 238, 244);
-    border-radius: 30px;
-  }
-  .flip-card {
-    display: flex;
-    border-radius: 30px;
-    justify-content: center;
-    align-items: center;
-    width: 80%;
-    height: 48svh;
-    perspective: 1000px;
-    background-color: rgb(238, 238, 244);
-    margin: 10px; /* Add space between the cards */
-  }
-  .flip-card-back {
-    background-size: 50%;
-  }
-}
-
 @media (max-width: 821px) {
   .card-grid {
     position: absolute;
     top: 30%;
     left: 19%;
     width: 62%;
-    height: 50svh; /* Height of the grid */
+    height: 50svh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -181,7 +150,7 @@ button:hover {
   }
 
   .flip-card {
-    width: 80%; /* Adjust card width for smaller screens */
+    width: 80%;
     margin: 5px 0;
   }
 
@@ -206,7 +175,7 @@ button:hover {
     top: 31%;
     left: 19%;
     width: 62%;
-    height: 50svh; /* Height of the grid */
+    height: 50svh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
