@@ -2,7 +2,7 @@
   "name": "toms-game-hub",
   "version": "1.0.0",
   "description": "",
-  "main": "index.html",
+  "main": "app.js",
   "dependencies": {
     "acorn": "^8.14.1",
     "ajv": "^8.17.1",
