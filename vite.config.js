@@ -1,7 +1,9 @@
 import { defineConfig } from 'vite'
 
 export default defineConfig({
-  server: {
-    port: 3000
+  base: './', // Ensures relative paths work
+  build: {
+    outDir: 'dist', // Ensure correct output folder
+    assetsDir: 'assets' // Keeps assets organized in 'dist/assets'
   }
 })

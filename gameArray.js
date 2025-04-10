@@ -1,7 +1,7 @@
 export const gameArray = [
   {
     link: 'Game-1/3 in a Row', // Maps to /src/components/games/Game-1/3 in a Row/index.html
-    imageSrc: './src/assets/images/game1.png',
+    imageSrc: '/src/assets/images/game1.png',
     description: '3 in a row - the classic game to play with friends'
   },
   {
